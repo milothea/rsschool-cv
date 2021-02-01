@@ -13,8 +13,7 @@ h2 {
 }
 
 .wrapper {
-    height: 90%;
-    width: 80%;
+    width: 80remgi;
     margin: 5% auto;
     border: 1rem dotted #f5e342;
 }
