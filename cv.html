@@ -3,75 +3,177 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="content-wrapper" id="start">
       <header>
-        <div>
-          <h1>Liubou Sauchanka</h1>
-          <ul class="contacts">
-            <li>+375257822559 (Telegram, Viber, WhatsApp)</li>
-            <li><a href="mailto:sauchanka.liubou@gmail.com">sauchanka.liubou@gmail.com</a></li>
-          </ul>
-        </div>
-        <img src="img/photo.JPG" alt="personal photo">
+        <h1>curriculum vitae</h1>
       </header>
 
-      <section>
-        <a name="about-me"></a>
-        <h2>About me</h2>
+      <div class="left-menu-block">
+        <img src="img/photo.JPG" alt="personal photo">
+        <nav>
+          <h2>navigation</h2>
+          <ul>
+            <li data-id="position">
+              <a href="#position">position</a>
+            </li>
+            <li data-id="contacts">
+              <a href="#contacts">contacts</a>
+            </li>
+            <li data-id="about-me">
+              <a href="#about-me">about me</a>
+            </li>
+            <li data-id="skills">
+              <a href="#skills">skills</a>
+            </li>
+            <li data-id="code">
+              <a href="#code">code examples</a>
+            </li>
+            <li data-id="work">
+              <a href="#work">work experience</a>
+            </li>
+            <li data-id="education">
+              <a href="#education">education</a>
+            </li>
+            <li data-id="eng">
+              <a href="#eng">english level</a>
+            </li>
+            <li data-id="reset">
+              <a href="#start">reset viewing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section id="position">
+        <h3>position</h3>
+        <div class="divider"></div>
+        <p>Junior Front-End Developer</p>
+      </section>
+
+      <section id="contacts">
+        <h3>contacts</h3>
+        <div class="divider"></div>
+        <ul>
+          <li>
+            <a href="mailto:sauchanka.liubou@gmail.com">sauchanka.liubou@gmail.com</a>
+          </li>
+          <li>
+            <p>+ 375 25 782 25 59</p>
+          </li>
+          <li class="messenger-icons">
+            <div></div>
+            <div></div>
+            <div></div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about-me">
+        <h3>about me</h3>
+        <div class="divider"></div>
+        <p>
+          My strengths are persistance and curiousity. Both of these qualities helps me to learn new and
+          successfully use it in my life. I don’t have a relevant work expirience with web development
+          yet but I’m learning JavaScript all the time when I'm free from my every day routine. Because
+          it’s fantastic to feel excited when your code works!
+        </p>
         <p>
           My goal is to find a place where I can do really interesting things with interesting people.
           Web development is challenging and interesting for me. And it shows me that there is nothing
           what you can’t learn and do.
         </p>
-        <p>
-          My strengths are persistance and curiousity. Both of these qualities helps me to learn new and
-          successfully use it in my life. I don’t have a relevant work expirience with web development
-          yet but I’m learning JavaScript all the time when I'm able . Because it’s fantastic to feel excited
-          when your code works!
-        </p>
       </section>
 
-      <section>
-        <a name="skills"></a>
-        <h2>Skills</h2>
+      <section id="skills">
+        <h3>skills</h3>
+        <div class="divider"></div>
         <ul>
-          <li>HTMl/CSS</li>
-          <li>JavaScript</li>
-          <li>WebStorm</li>
-          <li>Github</li>
-          <li>Python (basic)</li>
+          <li>
+            <h5>Programming</h5>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>Python (basic)</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Tools</h5>
+            <ul>
+              <li>Webstorm</li>
+              <li>GitHub</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Other skills</h5>
+            <ul>
+              <li>Good communicative skills</li>
+              <li>Time management</li>
+              <li>Teamwork skills</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
-      <section>
-        <a name="code"></a>
-        <h2>Code examples</h2>
-        <a href="https://github.com/milothea">My Github</a>
+      <section id="code">
+        <h3>code examples</h3>
+        <div class="divider"></div>
+        <div class="code-wrapper">
+          <figure>
+            <img src="img/code-1.jpg" alt="code example 1">
+            <figcaption>Code example #1</figcaption>
+          </figure>
+          <figure>
+            <img src="img/code-2.jpg" alt="code example 2">
+            <figcaption>Code example #2</figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section>
-        <a name="experience"></a>
-        <h2>Work experience</h2>
-        <p>I don’t have relevant work experience.<br>TBC</p>
+      <section id="work">
+        <h3>work experience</h3>
+        <div class="divider"></div>
+        <p>I don’t have relevant work experience.</p>
+        <p>For the time being :)</p>
       </section>
 
-      <section>
-        <a name="education"></a>
-        <h2>Education</h2>
-        <p><span>2020 - to present - Udemy.com</span> (JavaScript + React)</p>
-        <p><span>2012 - 2018 — “BIP Institute of Jurisprudence”</span> (Bachelor in Jurisprudence)</p>
-        <p><span>2018 — IT Academy</span> (Front-EndDeveloper: JavaScript)</p>
-        <p><span>2017 — IT Academy</span> (Front-EndDeveloper: HTML/CSS)</p>
+      <section id="education">
+        <h3>education</h3>
+        <div class="divider"></div>
+        <h4>High education</h4>
+        <p><span>2012 - 2018 &mdash; “BIP Institute of Jurisprudence”:</span> Bachelor in Jurisprudence</p>
+        <h4>Courses</h4>
+        <p><span>2020 - to present &mdash; Udemy.com:</span> JavaScript + React online course</p>
+        <p><span>2018 &mdash; IT Academy:</span>Front-EndDeveloper, JavaScript</p>
+        <p><span>2017 &mdash; IT Academy</span> Front-EndDeveloper, HTML/CSS</p>
       </section>
 
-      <section id="english">
-        <h2>English level</h2>
-        <p>A2 - Basic user</p>
+      <section id="eng">
+        <h3>english level</h3>
+        <div class="divider"></div>
+        <p>A2 &mdash; Basic user</p>
       </section>
+
+      <footer>
+        <ul class="footer-content">
+          <li>
+            <p> Created in 2021</p>
+          </li>
+          <li>
+            <a href="https://github.com/milothea" title="Personal GitHub page" target="_blank" class="github-link"></a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/" title="RS School course website" target="_blank" class="course-link"></a>
+          </li>
+        </ul>
+      </footer>
+
+      <script src="src/script.js"></script>
     </div>
   </body>
 </html>
