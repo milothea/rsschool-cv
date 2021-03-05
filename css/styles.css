@@ -1,63 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-
-body {
-    font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-h1 { font-size: 5rem; }
+/* GENERAL styles */
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #f7f7f7;
+    background-color: #dbdbdb;
+}
+
+header,
+section,
+footer {
+    width: 57rem;
+    box-sizing: border-box;
+    margin-left: 27rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #444444;
+    background-color: #f7f7f7;
+}
+
+header,
+section { padding: 1rem; }
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+h2, h3, h4, h5 { letter-spacing: .2rem; }
 
 h2 {
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    color: #e3a734;
+}
+
+h3 { font-size: 1.7rem; }
+
+h4, h5 { color: #e3a734; }
+
+h4 { font-size: 1.5rem; }
+
+h5{ font-size: 1.3rem; }
+
+img { object-fit: cover; }
+
+.divider {
+    width: 15rem;
+    height: .3rem;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    background-color: #e3a734;
+}
+
+/* HOVER and ACTIVE styles */
+a:hover { color: #e3a734; }
+
+a:active { color: #a36900; }
+
+/* ACTIVE BLOCK styles (js) */
+.active-nav-elem,
+.active-nav-elem a { color: #e3a734; }
+
+.active-nav-elem { list-style: square inside; }
+
+.active-block,
+.active-block a { color: #f7f7f7; }
+
+.active-block { background-color: #444444; }
+
+/* CONTENT WRAPPER and HEADER styles */
+.content-wrapper {
+    width: 85rem;
+    margin: 0 auto;
+}
+
+header { height: 5rem; }
+
+h1 {
     font-size: 3rem;
-    color: #2d2f30;
+    letter-spacing: .2rem;
 }
 
-.wrapper {
-    width: 80rem;
-    margin: 5% auto;
-    border: 1rem dotted #f5e342;
+/* LEFT MENU styles */
+.left-menu-block {
+    position: fixed;
+    top: 0;
+    width: 25rem;
+    height: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #444444;
 }
 
-header  {
+.left-menu-block img {
+    width: 25rem;
+    object-fit: cover;
+}
+
+nav ul li { padding: .5rem; }
+
+nav ul li a { color: #f7f7f7; }
+
+nav ul li:last-of-type {
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    text-transform: none;
+    color: #dbdbdb;
+}
+
+/* CONTACTS section styles */
+#contacts ul li { list-style-type: square; }
+
+.messenger-icons {
+    display: flex;
+    margin-left: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+}
+
+.messenger-icons div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: contain;
+}
+
+.messenger-icons div:nth-of-type(1) { background-image: url("../img/telegram.svg"); }
+
+.messenger-icons div:nth-of-type(2) { background-image: url("../img/whatsapp.svg"); }
+
+.messenger-icons div:nth-of-type(3) { background-image: url("../img/viber.svg"); }
+
+/* CODE EXAMPLES styles */
+.code-wrapper {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+figure img {
+    width: 25rem;
+    height: auto;
+}
+
+/* EDUCATION styles */
+p span { font-weight: bold; }
+
+/* FOOTER styles */
+footer {
+    height: 5rem;
+    padding: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 10rem;
+    width: 90%;
+    margin: 0;
 }
 
-header ul li {
-    list-style: none;
-    font-size: 2.5rem;
-}
-
-header ul a {
-    color: #1791e8;
-    text-decoration: none;
-}
-
-img {
-    width: 15rem;
-    height: 15rem;
-    margin-left: 2.5rem;
-    border-radius: 50%;
-}
-
-section {
-    padding: 1rem 10rem;
-    font-size: 1.7rem;
-}
-
-p,
-section:nth-of-type(2) ul,
-section:nth-of-type(3) a {
+.footer-content li,
+.footer-content li a {
     display: block;
-    width: 80%;
-    margin: 0 auto;
-    text-align: justify;
+    width: 10rem;
+    height: 3.4rem;
+    background-size: contain;
 }
 
-span { font-weight: bold; }
-
-section:last-of-type p {
-    padding-bottom: 7rem;
+.footer-content li p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
 }
+
+.github-link { background: url("../img/GitHub-Mark-120px-plus.png") center no-repeat; }
+
+.course-link { background: url("../img/rs_school_js.svg") center no-repeat; }
+
+.youtube-link { background: url("../img/youtube.svg") center no-repeat; }
