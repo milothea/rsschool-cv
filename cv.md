@@ -1,4 +1,4 @@
-# Liubou Sauchanka
+# Liubou Kavaleuskaya
 +375257822559 (Telegram, Viber, WhatsApp)  
 [sauchanka.liubou@gmail.com](mailto:sauchanka.liubou@gmail.com)
 
