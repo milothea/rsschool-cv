@@ -83,3 +83,16 @@ function capital(capitals){
    Software developer
 2. **DELIUS-TERRA ALC.**: June 2020 - July 2021  
    Web specialist
+
+## Education
+* Java course, 2024
+* SQL basics, 2024
+* Node.js course, 2023
+* Angular course, 2022
+* React course, 2021
+* JS / FE course, 2021
+* Bachelor of Law, 2018
+
+## Foreign languages
+* English - B2
+* Polish - A2
