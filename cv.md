@@ -75,7 +75,7 @@ function capital(capitals){
         .map( item => {
             return `The capital of ${item['country'] || item['state']} is ${item['capital']}`;
         });
-});
+}
 ```
 
 ## Work experience
