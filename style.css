@@ -3,6 +3,7 @@
     /* COLORS */
     --gray: #444444;
     --light-gray: #D1D1D5;
+    --lightest-gray: #F3F6F4;
     --yellow: #F3CE45;
     /* --- */
 
@@ -18,6 +19,7 @@
     margin: 0;
     padding: 0;
     color: var(--gray);
+    list-style: none;
 }
 
 a {
@@ -27,6 +29,7 @@ a {
 a:hover {
     font-weight: bold;
     color: var(--yellow);
+    cursor: pointer;
 }
 
 .h1 {
@@ -152,10 +155,43 @@ a:hover {
     width: 10%;
 }
 
+.app-width {
+    width: var(--app-content-width);
+}
+
 /* APP STYLES */
+@keyframes hover {
+    from {
+        font-weight: normal;
+        color: var(--light-gray);
+    }
+    to {
+        color: var(--gray);
+        font-weight: bold;
+    }
+}
+
 .header {
     height: 24rem;
-    margin: 2rem;
+    margin: 2rem auto;
+
+    .nav {
+        margin: 0 auto;
+
+        .nav-link {
+            display: block;
+            width: 7rem;
+            font-size: .8rem;
+            text-align: center;
+            color: var(--light-gray);
+
+            &:hover {
+                color: var(--gray);
+                font-weight: bold;
+                animation: hover 450ms;
+            }
+        }
+    }
 
     .photo {
         height: 20rem;
@@ -177,7 +213,6 @@ a:hover {
 }
 
 .main {
-    max-width: var(--app-content-width);
     margin: 0 auto;
     border-top:  var(--border);
 
@@ -188,18 +223,19 @@ a:hover {
     }
 
     .left-main-content {
-        width: 30%;
         border-right: var(--border);
         padding-right: 2rem;
     }
 
     .right-main-content {
-        width: calc(70% - 3rem);
         padding-left: 2rem;
     }
 
-    .skill-name {
-        font-size: 1.1rem;
+    .skill-container {
+        width: 22rem;
+        .skill-name {
+            font-size: 1.1rem;
+        }
     }
 
     .indicators-container {
@@ -267,6 +303,21 @@ a:hover {
             color: var(--yellow);
         }
     }
+
+    .code-sample {
+        background-color: var(--lightest-gray);
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    .project-link {
+        color: var(--yellow);
+        font-weight: bold;
+
+        &:hover {
+            color: var(--gray);
+        }
+    }
 }
 
 .footer {
@@ -279,5 +330,13 @@ a:hover {
 
     .rss-icon {
         height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px)  {
+    .header,
+    .left-main-content,
+    .right-main-content {
+        padding: 2rem;
     }
 }

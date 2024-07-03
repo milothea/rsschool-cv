@@ -7,7 +7,82 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     </head>
     <body>
-        <header class="header flex center">
+        <header class="header app-width flex center column">
+            <nav class="nav">
+                <ul class="flex align-center gap">
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#about-me"
+                        >
+                            about me
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#contact"
+                        >
+                            contact
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#core-skills"
+                        >
+                            core skills
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#languages"
+                        >
+                            languages
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#education"
+                        >
+                            education</a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#work-experience"
+                        >
+                            work experience
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#additional-skills"
+                        >
+                            additional skills
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="#code-examples"
+                        >
+                            code examples
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                class="nav-link"
+                                href="#learning-projects"
+                        >
+                            learning projects
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <div class="content flex gap">
                 <img class="photo" src="assets/image/photo.jpg" alt="personal photo" >
                 <div class="header-details">
@@ -15,7 +90,7 @@
                     <h3 class="h3 letter-spacing">FRONTEND DEVELOPER</h3>
                     <div class="divider"></div>
                     <div class="flex space-between">
-                        <div class="details-section">
+                        <div class="details-section" id="about-me">
                             <h2 class="h2 bold letter-spacing margin-bottom uppercase">about me</h2>
                             <p class="margin-bottom-quarter">4 years of commercial experience</p>
                             <p class="margin-bottom-quarter">Team player as well as independent worker</p>
@@ -23,87 +98,99 @@
                             <p class="margin-bottom-quarter">Forest lover. Bookworm</p>
                         </div>
                         <div class="vertical-divider"></div>
-                        <div class="details-section flex column">
+                        <div class="details-section flex column" id="contact">
                             <h2 class="h2 bold letter-spacing margin-bottom uppercase">contact</h2>
                             <div class="flex align-center gap margin-bottom-half">
                                 <img class="icon" src="assets/icons/location.svg" alt="location icon" >
                                 <span>Warsaw, Poland</span>
                             </div>
-                            <div class="flex align-center gap margin-bottom-half">
-                                <img class="icon" src="assets/icons/phone.svg" alt="phone icon" >
-                                <span>+48 572 228 507</span>
-                            </div>
-                            <div class="flex align-center gap margin-bottom-half">
-                                <img class="icon" src="assets/icons/mail.svg" alt="phone icon" >
-                                <a href="mailto:sauchanka.liubou@gmail.com">sauchanka.liubou@gmail.com</a>
-                            </div>
-                            <div class="flex align-center gap">
-                                <img class="icon" src="assets/icons/linkedin.svg" alt="linkedin icon" >
-                                <a href="https://www.linkedin.com/in/liubou-kavaleuskaya/">Liubou Kavaleuskaya</a>
-                            </div>
+                            <ul>
+                                <li class="flex align-center gap margin-bottom-half">
+                                    <img class="icon" src="assets/icons/phone.svg" alt="phone icon" >
+                                    <span>+48 572 228 507</span>
+                                </li>
+                                <li class="flex align-center gap margin-bottom-half">
+                                    <img class="icon" src="assets/icons/mail.svg" alt="phone icon" >
+                                    <a href="mailto:sauchanka.liubou@gmail.com">sauchanka.liubou@gmail.com</a>
+                                </li>
+                                <li class="flex align-center gap">
+                                    <img class="icon" src="assets/icons/linkedin.svg" alt="linkedin icon" >
+                                    <a
+                                        href="https://www.linkedin.com/in/liubou-kavaleuskaya/"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                    >
+                                        Liubou Kavaleuskaya
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="main flex space-between">
+        <main class="main app-width flex space-between">
             <div class="left-main-content">
-                <section>
+                <section id="core-skills">
                     <h2 class="h2 bold letter-spacing margin-bottom uppercase">core skills</h2>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="indicators-container flex">
-                            <div class="indicator-skill width-100"></div>
-                        </div>
-                    </div>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="skill-name">TypeScript</span>
-                        <div class="indicators-container flex">
-                            <div class="indicator-skill width-90"></div>
-                            <div class="indicator-empty width-10"></div>
-                        </div>
-                    </div>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="skill-name">React</span>
-                        <div class="indicators-container flex">
-                            <div class="indicator-skill width-100"></div>
-                        </div>
-                    </div>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="skill-name">Redux | MobX</span>
-                        <div class="indicators-container flex">
-                            <div class="indicator-skill width-80"></div>
-                            <div class="indicator-empty width-20"></div>
-                        </div>
-                    </div>
-                    <div class="flex align-center space-between">
-                        <span class="skill-name">HTML | CSS </span>
-                        <div class="indicators-container flex">
-                            <div class="indicator-skill width-100"></div>
-                        </div>
-                    </div>
+                    <ul>
+                        <li class="flex align-center space-between margin-bottom-half skill-container">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="indicators-container flex">
+                                <div class="indicator-skill width-100"></div>
+                            </div>
+                        </li>
+                        <li class="flex align-center space-between margin-bottom-half skill-container">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="indicators-container flex">
+                                <div class="indicator-skill width-90"></div>
+                                <div class="indicator-empty width-10"></div>
+                            </div>
+                        </li>
+                        <li class="flex align-center space-between margin-bottom-half skill-container">
+                            <span class="skill-name">React</span>
+                            <div class="indicators-container flex">
+                                <div class="indicator-skill width-100"></div>
+                            </div>
+                        </li>
+                        <li class="flex align-center space-between margin-bottom-half skill-container">
+                            <span class="skill-name">Redux | MobX</span>
+                            <div class="indicators-container flex">
+                                <div class="indicator-skill width-80"></div>
+                                <div class="indicator-empty width-20"></div>
+                            </div>
+                        </li>
+                        <li class="flex align-center space-between skill-container">
+                            <span class="skill-name">HTML | CSS </span>
+                            <div class="indicators-container flex">
+                                <div class="indicator-skill width-100"></div>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
                 <div class="divider"></div>
-                <section class="width-75">
+                <section class="width-75" id="languages">
                     <h2 class="h2 bold letter-spacing margin-bottom uppercase">languages</h2>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="language bold">English</span>
-                        <span>&mdash;</span>
-                        <span class="language">B2</span>
-                    </div>
-                    <div class="flex align-center space-between margin-bottom-half">
-                        <span class="language bold">Polish</span>
-                        <span>&mdash;</span>
-                        <span class="language">A2</span>
-                    </div>
-                    <div class="flex align-center space-between">
-                        <span class="language bold">Russian</span>
-                        <span>&mdash;</span>
-                        <span class="language">Native</span>
-                    </div>
+                    <ul>
+                        <li class="flex align-center space-between margin-bottom-half">
+                            <span class="language bold">English</span>
+                            <span>&mdash;</span>
+                            <span class="language">B2</span>
+                        </li>
+                        <li class="flex align-center space-between margin-bottom-half">
+                            <span class="language bold">Polish</span>
+                            <span>&mdash;</span>
+                            <span class="language">A2</span>
+                        </li>
+                        <li class="flex align-center space-between">
+                            <span class="language bold">Russian</span>
+                            <span>&mdash;</span>
+                            <span class="language">Native</span>
+                        </li>
+                    </ul>
                 </section>
                 <div class="divider"></div>
-                <section>
+                <section id="education">
                     <h2 class="h2 bold letter-spacing margin-bottom uppercase">education</h2>
                     <div class="margin-bottom-half">
                         <p class="bold">Node.js</p>
@@ -128,7 +215,7 @@
                 </section>
             </div>
             <div class="right-main-content">
-                <section>
+                <section id="work-experience">
                     <h2 class="h2 bold margin-bottom letter-spacing uppercase">work experience</h2>
                     <div class="experience-row">
                         <div class="flex space-between">
@@ -182,29 +269,119 @@
                     </div>
                 </section>
                 <div class="divider"></div>
-                <section>
+                <section id="additional-skills">
                     <h2 class="h2 bold letter-spacing margin-bottom uppercase">additional skills</h2>
-                    <div class="margin-bottom-half">
-                        <span class="bold">Web development: </span>
-                        SASS, Angular, Ant Design, Material UI, Tailwind CSS, IBM Carbon Components, Redux toolkit,
-                        Formik, React forms, Styles-components, Vite
+                    <ul>
+                        <li class="margin-bottom-half">
+                            <span class="bold">Web development: </span>
+                            SASS, Angular, Ant Design, Material UI, Tailwind CSS, IBM Carbon Components, Redux toolkit,
+                            Formik, React forms, Styles-components, Vite
+                        </li>
+                        <li class="margin-bottom-half">
+                            <span class="bold">Databases: </span>
+                            MySQL, PostgreSQL
+                        </li>
+                        <li class="margin-bottom-half">
+                            <span class="bold">Testing: </span>
+                            Jest, Enzyme, React testing library
+                        </li>
+                        <li class="margin-bottom-half">
+                            <span class="bold">Basic knowledge: </span>
+                            Python, Java, Node.js, GraphQL, REST
+                        </li>
+                        <li class="margin-bottom-half">
+                            <span class="bold">Other skills: </span>
+                            Git | GitHub | GitLab, npm | yarn, Docker, Podman, Figma, Jenkins, Allure reporting, Postman
+                        </li>
+                    </ul>
+                </section>
+                <div class="divider"></div>
+                <section id="code-examples">
+                    <h2 class="h2 bold letter-spacing uppercase margin-bottom">code examples</h2>
+                    <div>
+                        <pre class="code-sample margin-bottom-half">
+                            function capital(capitals) {
+                                return capitals.map( item => {
+                                    return `The capital of ${item['country'] || item['state']} is ${item['capital']}`;
+                                });
+                            }
+                        </pre>
+                        <pre class="code-sample margin-bottom-half">
+                            function finalGrade (grade, projects) {
+                                switch (true) {
+                                    case grade > 90 || projects > 10:
+                                        return 100;
+                                    case grade > 75 && projects >= 5:
+                                        return 90;
+                                    case grade > 50 && projects >= 2:
+                                        return 75;
+                                    default:
+                                        return 0;
+                                }
+                            }
+                        </pre>
+                        <pre class="code-sample">
+                            ⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣾⡿⣷⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀                           ⣴⡿⠋⠁⢠⣷⣇⠈⠻⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                           ⠀⠀⠀⠀⠀⠀⡿⠁⣶⠀⢸⣿⡿⠋⠀⠹⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                           ⠀⠀⠀⠀⠀⢰⠿⡾⢻⡆⠀⠈⠁⠀⠀⠀⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀                           ⣠⠟⠤⠗⠈⣿⣤⠀⠀⢀⣸⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀                          ⢀⣤⠞⠁⠀⢀⣠⣶⣽⣿⣶⠾⠛⠁⠀⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                           ⣾⠋⠀⢀⣠⣶⡿⠞⠁⣸⡇⠀⠀⠀⠀⠀⣿⡇⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                           ⠙⠛⠛⠉⠁⠀⠀⠀⢀⣿⠃⠁⠀⠀⠀⠀⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                             ⠀⠀⠀⠀⠀⠀⠀⢀⣾⡟⠀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                             ⠀⠀⠀⠀⠀⠀⢀⣾⡿⠀⠀⠀⠀⠀⠀⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                           ⠀⠀⠀⠀⠀⢠⣾⡟⠁⠀⠀⠀⠀⠀⠀⠸⣿⣴⣶⣿⡿⠿⢿⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                         ⠀⠀⠀⠀⣰⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⡀⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣷⣶⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                       ⠀⠀⠀⣰⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠦⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠿⢿⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                     ⠀⠀⢠⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⠶⠶⠶⠶⣶⣦⣤⣄⠀⠀⠈⠙⠛⠷⣦⣀⣠⣤⣶⣄⣠⣴⡄⠀⠀
+                    ⠀⠀⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣦⡀⠀⠀⠀⠀⠉⠁⣀⠈⡏⢹⣟⠀⠀⠀
+                    ⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣄⡀⠀⠀⣠⡞⠁⠀⠀⠸⠿⣭⣼⠇
+                    ⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠶⠖⠛⠀⠀⠀⠀⠀⣾⣿⣯⠀
+                    ⠀⠀⢿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⣀⣤⡶⠿⠛⠉⠀⠀
+                     ⠀⠀⠈⢿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣴⠟⢉⣴⡿⠛⠁⠀⠀⠀⠀⠀⠀
+                      ⠀⠀⠀⠀⠙⢿⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠛⠉⠀⠉⣁⣴⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                       ⠀⠀⠀⠀⠀⠀⠙⠻⢷⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠋⠀⣀⣤⣶⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠻⠷⣶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀⠘⣛⡶⢾⣭⣤⣴⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⣿⠛⢿⠿⠿⠶⠖⠋⢹⠁⢸⡏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⢸⣏⠀⢸⡀⠀⠀⠀⠀⢸⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⣏⠉⣛⣻⣶⣿⡧⣰⡷⠷⠀⠀⠀⢠⡿⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠿⠿⢿⣏⣅⣤⣶⢿⣧⣀⣀⣀⣠⣾⣃⣰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠁⢀⣾⣃⣤⣼⠿⡿⢛⣻⡿⠁⠀⠀⠀⠀
+                        </pre>
                     </div>
-                    <div class="margin-bottom-half">
-                        <span class="bold">Databases: </span>
-                        MySQL, PostgreSQL
-                    </div>
-                    <div class="margin-bottom-half">
-                        <span class="bold">Testing: </span>
-                        Jest, Enzyme, React testing library
-                    </div>
-                    <div class="margin-bottom-half">
-                        <span class="bold">Basic knowledge: </span>
-                        Python, Java, Node.js, GraphQL, REST
-                    </div>
-                    <div class="margin-bottom-half">
-                        <span class="bold">Other skills: </span>
-                        Git | GitHub | GitLab, npm | yarn, Docker, Podman, Figma, Jenkins, Allure reporting, Postman
-                    </div>
+                </section>
+                <div class="divider"></div>
+                <section id="learning-projects">
+                    <h2 class="h2 bold letter-spacing margin-bottom uppercase">learning projects</h2>
+                    <ul>
+                        <li class="margin-bottom-half">
+                            <a
+                                class="project-link"
+                                href="https://rolling-scopes-school.github.io/milothea-JSFE2021Q1/photo-filter/index.html"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Photo filter
+                            </a>
+                            <span class="italic">
+                                RS School, 2021
+                            </span>
+                        </li>
+                        <li>
+                            <a
+                                    class="project-link"
+                                    href="https://rolling-scopes-school.github.io/milothea-JSFE2021Q1/virtual-piano/index.html"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                            >
+                                Virtual piano
+                            </a>
+                            <span class="italic">
+                                RS School, 2021
+                            </span>
+                        </li>
+                    </ul>
                 </section>
             </div>
         </main>
