@@ -254,10 +254,13 @@ a:hover {
 
     .position-description {
         padding-left: 1rem;
-        font-style: italic;
 
         ul, li {
             color: var(--light-gray);
+        }
+
+        li {
+            margin-bottom: .5rem;
         }
 
         li::marker {
